@@ -55,6 +55,7 @@
 <span id="55">55</span>
 <span id="56">56</span>
 <span id="57">57</span>
+<span id="58">58</span>
 </pre><pre class="rust ">
 <span class="attribute">#![<span class="ident">no_std</span>]</span>
 <span class="attribute">#![<span class="ident">recursion_limit</span><span class="op">=</span><span class="string">&quot;1024&quot;</span>]</span>
@@ -71,6 +72,7 @@
 <span class="kw">pub</span> <span class="kw">use</span> <span class="ident">hal</span>::<span class="ident">atsamd21g18a</span>::<span class="kw-2">*</span>;
 
 <span class="kw">use</span> <span class="ident">hal</span>::<span class="ident">prelude</span>::<span class="kw-2">*</span>;
+<span class="attribute">#[<span class="ident">cfg</span>(<span class="ident">feature</span> <span class="op">=</span> <span class="string">&quot;usb&quot;</span>)]</span>
 <span class="kw">pub</span> <span class="kw">use</span> <span class="ident">hal</span>::<span class="ident">usb</span>;
 <span class="kw">pub</span> <span class="kw">use</span> <span class="ident">hal</span>::<span class="kw-2">*</span>;
 
